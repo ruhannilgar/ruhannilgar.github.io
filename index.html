@@ -1,0 +1,1427 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#050505" />
+
+        <!-- SEO -->
+        <title>Ruhan — Cinematic Video Editor & Visual Storyteller</title>
+        <meta
+            name="description"
+            content="Ruhan is a professional video editor, photo editor, motion graphics designer, and visual storyteller transforming ordinary content into extraordinary visual stories."
+        />
+        <meta
+            name="keywords"
+            content="video editor, photo editor, motion graphics, color grading, content creation, ruhan, visual storyteller"
+        />
+        <meta name="author" content="Ruhan" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="Ruhan — Cinematic Video Editor & Visual Storyteller"
+        />
+        <meta
+            property="og:description"
+            content="Professional Video Editing, Photo Editing, Motion Graphics, Color Grading, and Content Creation Services."
+        />
+        <meta property="og:image" content="assets/images/og-image.jpg" />
+        <meta property="og:url" content="https://ruhan.portfolio" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:title"
+            content="Ruhan — Cinematic Video Editor & Visual Storyteller"
+        />
+        <meta
+            name="twitter:description"
+            content="Transforming Ordinary Content Into Extraordinary Visual Stories"
+        />
+        <meta name="twitter:image" content="assets/images/og-image.jpg" />
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Ruhan",
+                "jobTitle": "Video Editor & Visual Storyteller",
+                "description": "Professional video editor, photo editor, motion graphics designer and visual storyteller.",
+                "url": "https://ruhan.portfolio",
+                "sameAs": []
+            }
+        </script>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/animations.css" />
+        <link rel="stylesheet" href="css/responsive.css" />
+    </head>
+    <body data-theme="dark">
+        <!-- Loading Screen -->
+        <div id="loader" aria-hidden="true">
+            <div class="loader-inner">
+                <div class="loader-logo">R</div>
+                <div class="loader-bar"><div class="loader-fill"></div></div>
+                <p class="loader-text">Crafting your experience…</p>
+            </div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div id="cursor" aria-hidden="true"></div>
+        <div id="cursor-trail" aria-hidden="true"></div>
+
+        <!-- Scroll Progress Bar -->
+        <div id="scroll-progress" aria-hidden="true"></div>
+
+        <!-- ─── HEADER ─────────────────────────────────────────────── -->
+        <header id="header">
+            <nav class="nav container" aria-label="Main navigation">
+                <a href="#home" class="nav-logo" aria-label="Ruhan home">
+                    <span class="logo-letter">R</span>
+                    <span class="logo-text">UHAN</span>
+                </a>
+                <ul class="nav-links" role="list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button
+                        id="theme-toggle"
+                        aria-label="Toggle light/dark mode"
+                        title="Toggle theme"
+                    >
+                        <span class="theme-icon">◐</span>
+                    </button>
+                    <a href="#contact" class="btn btn-sm">Hire Me</a>
+                    <button
+                        id="menu-toggle"
+                        class="menu-burger"
+                        aria-label="Toggle mobile menu"
+                        aria-expanded="false"
+                    >
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" aria-hidden="true">
+                <ul role="list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <!-- ─── HERO ───────────────────────────────────────────────── -->
+            <section id="home" class="hero" aria-label="Hero">
+                <div class="hero-bg" aria-hidden="true">
+                    <div class="hero-orb hero-orb-1"></div>
+                    <div class="hero-orb hero-orb-2"></div>
+                    <div class="hero-orb hero-orb-3"></div>
+                    <div class="hero-grid"></div>
+                    <div class="hero-film-strip"></div>
+                </div>
+
+                <div class="hero-content container">
+                    <div class="hero-eyebrow reveal">
+                        <span class="dot"></span>
+                        <span>Available for Projects Worldwide</span>
+                    </div>
+                    <h1 class="hero-name reveal delay-1">
+                        <span class="name-r">R</span
+                        ><span class="name-rest">UHAN</span>
+                    </h1>
+                    <p class="hero-headline reveal delay-2">
+                        Transforming Ordinary Content Into<br />
+                        <em>Extraordinary Visual Stories</em>
+                    </p>
+                    <p class="hero-sub reveal delay-3">
+                        Professional Video Editing · Photo Editing · Motion
+                        Graphics<br />Color Grading · Visual Storytelling
+                    </p>
+                    <div class="hero-cta reveal delay-4">
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span>View Portfolio</span>
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 16 16"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    d="M3 8h10M9 4l4 4-4 4"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-ghost"
+                            >Get Free Quote</a
+                        >
+                    </div>
+
+                    <div class="hero-stats reveal delay-5">
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="500">0</span
+                            ><span class="stat-plus">+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-count="100">0</span
+                            ><span class="stat-plus">+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🌍</span>
+                            <span class="stat-label">Worldwide</span>
+                        </div>
+                        <div class="stat-divider" aria-hidden="true"></div>
+                        <div class="stat-item">
+                            <span class="stat-icon">⚡</span>
+                            <span class="stat-label">Fast Delivery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-scroll-hint" aria-hidden="true">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </section>
+
+            <!-- ─── ABOUT ──────────────────────────────────────────────── -->
+            <section id="about" class="section about">
+                <div class="container about-grid">
+                    <div class="about-visual reveal">
+                        <div class="about-img-frame">
+                            <img src="./assets/images/ruhan-pic.jpeg" />
+                            <div class="about-badge">
+                                <span class="badge-num">2+</span>
+                                <span class="badge-txt">Years Experience</span>
+                            </div>
+                        </div>
+                        <div
+                            class="about-accent-block"
+                            aria-hidden="true"
+                        ></div>
+                    </div>
+
+                    <div class="about-content">
+                        <p class="section-eyebrow reveal">— Who I Am</p>
+                        <h2 class="section-title reveal delay-1">
+                            Meet <em>Ruhan</em>
+                        </h2>
+                        <p class="about-bio reveal delay-2">
+                            I'm a professional editor and visual storyteller who
+                            brings raw footage and images to life. With a
+                            cinematic eye and an obsession for precision, I
+                            craft content that doesn't just look good — it
+                            <em>moves</em> people.
+                        </p>
+                        <p class="about-bio reveal delay-3">
+                            From high-energy YouTube edits and brand films to
+                            delicate photo retouching and dynamic motion
+                            graphics, every project gets my full creative and
+                            technical commitment.
+                        </p>
+
+                        <div class="about-values reveal delay-4">
+                            <div class="value-item">
+                                <span class="value-icon">🎬</span>
+                                <div>
+                                    <strong>Cinematic Vision</strong>
+                                    <p>
+                                        Every frame is considered. Every cut is
+                                        intentional.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">⚡</span>
+                                <div>
+                                    <strong>Lightning Fast</strong>
+                                    <p>
+                                        Premium quality delivered ahead of
+                                        deadlines.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">🔄</span>
+                                <div>
+                                    <strong>Unlimited Revisions</strong>
+                                    <p>
+                                        Your vision perfected until you're
+                                        completely satisfied.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a
+                            href="#contact"
+                            class="btn btn-primary reveal delay-5"
+                            >Start a Project</a
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── SERVICES ───────────────────────────────────────────── -->
+            <section id="services" class="section services">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">— What I Do</p>
+                        <h2 class="section-title reveal delay-1">
+                            Premium <em>Services</em>
+                        </h2>
+                        <p class="section-sub reveal delay-2">
+                            End-to-end creative solutions for brands, creators,
+                            and businesses worldwide.
+                        </p>
+                    </div>
+
+                    <div class="services-grid">
+                        <article
+                            class="service-card reveal"
+                            style="--card-accent: #4f46e5"
+                        >
+                            <div class="service-icon" aria-hidden="true">
+                                🎞️
+                            </div>
+                            <h3>Video Editing</h3>
+                            <p>
+                                From YouTube bangers to cinematic brand films —
+                                compelling narratives that keep viewers hooked.
+                            </p>
+                            <ul class="service-list" role="list">
+                                <li>YouTube Videos & Shorts</li>
+                                <li>Reels & TikTok Content</li>
+                                <li>Corporate & Brand Films</li>
+                                <li>Podcast Editing</li>
+                                <li>Commercial Ads</li>
+                                <li>Wedding Films</li>
+                            </ul>
+                            <div class="service-cta">
+                                <a href="#contact" class="link-arrow"
+                                    >Get a Quote →</a
+                                >
+                            </div>
+                        </article>
+
+                        <article
+                            class="service-card reveal delay-1"
+                            style="--card-accent: #d4af37"
+                        >
+                            <div class="service-icon" aria-hidden="true">
+                                📸
+                            </div>
+                            <h3>Photo Editing</h3>
+                            <p>
+                                Pixel-perfect retouching and enhancement that
+                                elevates your images to professional standards.
+                            </p>
+                            <ul class="service-list" role="list">
+                                <li>Portrait Retouching</li>
+                                <li>Product Photography</li>
+                                <li>Background Removal</li>
+                                <li>Color Correction</li>
+                                <li>Real Estate Editing</li>
+                            </ul>
+                            <div class="service-cta">
+                                <a href="#contact" class="link-arrow"
+                                    >Get a Quote →</a
+                                >
+                            </div>
+                        </article>
+
+                        <article
+                            class="service-card reveal delay-2"
+                            style="--card-accent: #06b6d4"
+                        >
+                            <div class="service-icon" aria-hidden="true">
+                                ✨
+                            </div>
+                            <h3>Motion Graphics</h3>
+                            <p>
+                                Dynamic animations and visual effects that make
+                                your brand unforgettable and your content stand
+                                out.
+                            </p>
+                            <ul class="service-list" role="list">
+                                <li>Logo Animation</li>
+                                <li>Intro & Outro Videos</li>
+                                <li>Explainer Animations</li>
+                                <li>Typography Animation</li>
+                                <li>Kinetic Text</li>
+                            </ul>
+                            <div class="service-cta">
+                                <a href="#contact" class="link-arrow"
+                                    >Get a Quote →</a
+                                >
+                            </div>
+                        </article>
+
+                        <article
+                            class="service-card reveal delay-3"
+                            style="--card-accent: #ec4899"
+                        >
+                            <div class="service-icon" aria-hidden="true">
+                                🎨
+                            </div>
+                            <h3>Content Creation</h3>
+                            <p>
+                                Scroll-stopping visual assets designed to grow
+                                your audience and convert viewers into
+                                customers.
+                            </p>
+                            <ul class="service-list" role="list">
+                                <li>YouTube Thumbnail Design</li>
+                                <li>Branding Assets</li>
+                                <li>Social Media Content</li>
+                                <li>Story Templates</li>
+                            </ul>
+                            <div class="service-cta">
+                                <a href="#contact" class="link-arrow"
+                                    >Get a Quote →</a
+                                >
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── PORTFOLIO ──────────────────────────────────────────── -->
+            <section id="portfolio" class="section portfolio">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">— Selected Work</p>
+                        <h2 class="section-title reveal delay-1">
+                            Featured <em>Projects</em>
+                        </h2>
+                    </div>
+
+                    <div
+                        class="portfolio-filters reveal delay-2"
+                        role="tablist"
+                        aria-label="Portfolio categories"
+                    >
+                        <button
+                            class="filter-btn active"
+                            role="tab"
+                            aria-selected="true"
+                            data-filter="all"
+                        >
+                            All
+                        </button>
+                        <button
+                            class="filter-btn"
+                            role="tab"
+                            aria-selected="false"
+                            data-filter="video"
+                        >
+                            Video Editing
+                        </button>
+                        <button
+                            class="filter-btn"
+                            role="tab"
+                            aria-selected="false"
+                            data-filter="photo"
+                        >
+                            Photo Editing
+                        </button>
+                        <button
+                            class="filter-btn"
+                            role="tab"
+                            aria-selected="false"
+                            data-filter="motion"
+                        >
+                            Motion Graphics
+                        </button>
+                        <button
+                            class="filter-btn"
+                            role="tab"
+                            aria-selected="false"
+                            data-filter="commercial"
+                        >
+                            Commercial
+                        </button>
+                        <button
+                            class="filter-btn"
+                            role="tab"
+                            aria-selected="false"
+                            data-filter="social"
+                        >
+                            Social Media
+                        </button>
+                    </div>
+
+                    <div class="portfolio-grid" id="portfolio-grid">
+                        <article
+                            class="portfolio-item"
+                            data-category="video"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Cinematic Travel Vlog - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 250"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">🎬</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Video Editing</span
+                                        >
+                                        <h3>Cinematic Travel Vlog</h3>
+                                        <p>Client: WanderLens</p>
+                                        <p class="overlay-result">
+                                            ↑ 340% engagement growth
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="portfolio-item"
+                            data-category="photo"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Luxury Brand Retouch - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 45"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">📸</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Photo Editing</span
+                                        >
+                                        <h3>Luxury Brand Retouch</h3>
+                                        <p>Client: AuraFashion</p>
+                                        <p class="overlay-result">
+                                            Full product catalogue
+                                            transformation
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="portfolio-item"
+                            data-category="motion"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Tech Brand Intro - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 190"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">✨</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Motion Graphics</span
+                                        >
+                                        <h3>Tech Brand Intro</h3>
+                                        <p>Client: NexaFlow</p>
+                                        <p class="overlay-result">
+                                            Logo animation series
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="portfolio-item"
+                            data-category="commercial"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Product Commercial Ad - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 330"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">📺</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Commercial</span
+                                        >
+                                        <h3>Product Launch Ad</h3>
+                                        <p>Client: PulseHealth</p>
+                                        <p class="overlay-result">
+                                            ↑ 2.4M impressions
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="portfolio-item"
+                            data-category="social"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Viral Reels Series - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 140"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">📱</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Social Media</span
+                                        >
+                                        <h3>Viral Reels Series</h3>
+                                        <p>Client: FitWithZara</p>
+                                        <p class="overlay-result">
+                                            ↑ 50K followers in 30 days
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article
+                            class="portfolio-item"
+                            data-category="video"
+                            tabindex="0"
+                            role="button"
+                            aria-label="Wedding Film - View Project"
+                        >
+                            <div
+                                class="portfolio-thumb"
+                                style="--thumb-hue: 300"
+                            >
+                                <div class="thumb-placeholder">
+                                    <span class="thumb-icon">💍</span>
+                                    <div class="thumb-lines">
+                                        <div></div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div class="portfolio-overlay">
+                                    <div class="overlay-content">
+                                        <span class="overlay-cat"
+                                            >Video Editing</span
+                                        >
+                                        <h3>Cinematic Wedding Film</h3>
+                                        <p>Client: The Sharma Family</p>
+                                        <p class="overlay-result">
+                                            Full-day cinematic coverage
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── BEFORE / AFTER ────────────────────────────────────── -->
+            <section id="before-after" class="section before-after">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">— Transformation</p>
+                        <h2 class="section-title reveal delay-1">
+                            Before <em>&amp; After</em>
+                        </h2>
+                        <p class="section-sub reveal delay-2">
+                            Drag the slider to see the difference.
+                        </p>
+                    </div>
+
+                    <div class="ba-tabs reveal delay-3">
+                        <button class="ba-tab active" data-ba="0">
+                            Portrait Retouch
+                        </button>
+                        <button class="ba-tab" data-ba="1">
+                            Color Grading
+                        </button>
+                        <button class="ba-tab" data-ba="2">
+                            Background Removal
+                        </button>
+                    </div>
+
+                    <div class="ba-slider-wrap reveal delay-4">
+                        <div class="ba-slider" id="ba-slider">
+                            <div class="ba-before">
+                                <div class="ba-panel ba-before-panel">
+                                    <div class="ba-visual ba-visual-before">
+                                        <div class="ba-label">BEFORE</div>
+                                        <div
+                                            class="ba-demo-img before-demo"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ba-after">
+                                <div class="ba-panel ba-after-panel">
+                                    <div class="ba-visual ba-visual-after">
+                                        <div class="ba-label">AFTER</div>
+                                        <div
+                                            class="ba-demo-img after-demo"
+                                        ></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="ba-handle"
+                                id="ba-handle"
+                                role="slider"
+                                aria-label="Before/after comparison slider"
+                                aria-valuenow="50"
+                                aria-valuemin="0"
+                                aria-valuemax="100"
+                            >
+                                <div class="ba-handle-inner">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M4 10H16M4 10L7 7M4 10L7 13M16 10L13 7M16 10L13 13"
+                                            stroke="white"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── SKILLS ─────────────────────────────────────────────── -->
+            <section id="skills" class="section skills">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">
+                            — Tools of the Trade
+                        </p>
+                        <h2 class="section-title reveal delay-1">
+                            Software <em>Expertise</em>
+                        </h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <div
+                            class="skill-card reveal"
+                            style="--skill-color: #9999ff; --skill-pct: 98"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #9999ff20"
+                                >
+                                    Pr
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name"
+                                        >Adobe Premiere Pro</span
+                                    >
+                                    <span class="skill-pct-label">98%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="98"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="98"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-card reveal delay-1"
+                            style="--skill-color: #9999ff; --skill-pct: 95"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #9999ff20"
+                                >
+                                    Ae
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name"
+                                        >After Effects</span
+                                    >
+                                    <span class="skill-pct-label">95%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="95"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="95"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-card reveal delay-2"
+                            style="--skill-color: #31a8ff; --skill-pct: 97"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #31a8ff20"
+                                >
+                                    Ps
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Photoshop</span>
+                                    <span class="skill-pct-label">97%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="97"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="97"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-card reveal delay-3"
+                            style="--skill-color: #31a8ff; --skill-pct: 92"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #31a8ff20"
+                                >
+                                    Lr
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Lightroom</span>
+                                    <span class="skill-pct-label">92%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="92"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="92"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-card reveal delay-4"
+                            style="--skill-color: #f9b842; --skill-pct: 90"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #f9b84220"
+                                >
+                                    Da
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">CapCut</span>
+                                    <span class="skill-pct-label">90%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="90"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="90"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="skill-card reveal delay-5"
+                            style="--skill-color: #ff7043; --skill-pct: 80"
+                        >
+                            <div class="skill-icon-wrap">
+                                <div
+                                    class="skill-icon-placeholder"
+                                    style="background: #ff704320"
+                                >
+                                    Bl
+                                </div>
+                            </div>
+                            <div class="skill-info">
+                                <div class="skill-name-row">
+                                    <span class="skill-name">Alightmotion</span>
+                                    <span class="skill-pct-label">80%</span>
+                                </div>
+                                <div
+                                    class="skill-bar"
+                                    role="progressbar"
+                                    aria-valuenow="80"
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                >
+                                    <div
+                                        class="skill-fill"
+                                        data-width="80"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── TESTIMONIALS ───────────────────────────────────────── -->
+            <section id="testimonials" class="section testimonials">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">— Client Reviews</p>
+                        <h2 class="section-title reveal delay-1">
+                            What Clients <em>Say</em>
+                        </h2>
+                    </div>
+
+                    <div class="testimonials-slider-wrap reveal delay-2">
+                        <div class="testimonials-track" id="testimonials-track">
+                            <article class="testimonial-card">
+                                <div class="stars" aria-label="5 stars">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    "Ruhan completely transformed my YouTube
+                                    channel. The edits are cinematic,
+                                    professional, and my audience can
+                                    immediately feel the quality upgrade. Watch
+                                    time went up 180% in one month."
+                                </blockquote>
+                                <footer class="testimonial-author">
+                                    <div
+                                        class="author-avatar"
+                                        style="--av-color: #4f46e5"
+                                    >
+                                        A
+                                    </div>
+                                    <div>
+                                        <strong>Alex Turner</strong>
+                                        <span
+                                            >Travel YouTuber · 850K
+                                            Subscribers</span
+                                        >
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="testimonial-card">
+                                <div class="stars" aria-label="5 stars">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    "The product photo edits Ruhan delivered
+                                    were beyond what I imagined. Clean, luxury,
+                                    consistent. Our conversion rate on the
+                                    product pages went up 40% after we updated
+                                    the images."
+                                </blockquote>
+                                <footer class="testimonial-author">
+                                    <div
+                                        class="author-avatar"
+                                        style="--av-color: #d4af37"
+                                    >
+                                        S
+                                    </div>
+                                    <div>
+                                        <strong>Sarah Mitchell</strong>
+                                        <span
+                                            >Founder · LuxeGoods
+                                            E-commerce</span
+                                        >
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="testimonial-card">
+                                <div class="stars" aria-label="5 stars">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    "Fast delivery, incredible quality, and
+                                    Ruhan understood our brand vision
+                                    immediately. The motion graphics for our app
+                                    launch were fire. Absolutely will work with
+                                    him again."
+                                </blockquote>
+                                <footer class="testimonial-author">
+                                    <div
+                                        class="author-avatar"
+                                        style="--av-color: #06b6d4"
+                                    >
+                                        M
+                                    </div>
+                                    <div>
+                                        <strong>Marco Chen</strong>
+                                        <span>CEO · NexaFlow Technologies</span>
+                                    </div>
+                                </footer>
+                            </article>
+
+                            <article class="testimonial-card">
+                                <div class="stars" aria-label="5 stars">
+                                    ★★★★★
+                                </div>
+                                <blockquote>
+                                    "Our wedding film made us cry happy tears.
+                                    Ruhan captured every emotion perfectly and
+                                    the final edit is a masterpiece we'll
+                                    treasure forever. Cannot recommend enough."
+                                </blockquote>
+                                <footer class="testimonial-author">
+                                    <div
+                                        class="author-avatar"
+                                        style="--av-color: #ec4899"
+                                    >
+                                        P
+                                    </div>
+                                    <div>
+                                        <strong>Priya & Aryan Sharma</strong>
+                                        <span>Wedding Clients</span>
+                                    </div>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <div
+                            class="slider-controls"
+                            aria-label="Slider controls"
+                        >
+                            <button
+                                class="slider-btn prev"
+                                id="prev-btn"
+                                aria-label="Previous testimonial"
+                            >
+                                ←
+                            </button>
+                            <div class="slider-dots" id="slider-dots"></div>
+                            <button
+                                class="slider-btn next"
+                                id="next-btn"
+                                aria-label="Next testimonial"
+                            >
+                                →
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── PROCESS ────────────────────────────────────────────── -->
+            <section id="process" class="section process">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">— How It Works</p>
+                        <h2 class="section-title reveal delay-1">
+                            The <em>Process</em>
+                        </h2>
+                    </div>
+
+                    <div class="process-timeline">
+                        <div class="process-step reveal">
+                            <div class="step-num" aria-hidden="true">01</div>
+                            <div class="step-content">
+                                <h3>Discovery</h3>
+                                <p>
+                                    We talk through your vision, goals,
+                                    audience, and requirements. I listen deeply
+                                    to understand exactly what you need.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">🔍</div>
+                        </div>
+
+                        <div class="process-step reveal delay-1">
+                            <div class="step-num" aria-hidden="true">02</div>
+                            <div class="step-content">
+                                <h3>Planning</h3>
+                                <p>
+                                    I develop a clear creative strategy,
+                                    timeline, and deliverable plan tailored to
+                                    your project's needs.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">📐</div>
+                        </div>
+
+                        <div class="process-step reveal delay-2">
+                            <div class="step-num" aria-hidden="true">03</div>
+                            <div class="step-content">
+                                <h3>Editing</h3>
+                                <p>
+                                    The magic happens. I craft your content with
+                                    precision, creativity, and an obsessive eye
+                                    for detail.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">✂️</div>
+                        </div>
+
+                        <div class="process-step reveal delay-3">
+                            <div class="step-num" aria-hidden="true">04</div>
+                            <div class="step-content">
+                                <h3>Review</h3>
+                                <p>
+                                    You receive the first version and we review
+                                    it together. Your feedback is the compass
+                                    for the next step.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">👁️</div>
+                        </div>
+
+                        <div class="process-step reveal delay-4">
+                            <div class="step-num" aria-hidden="true">05</div>
+                            <div class="step-content">
+                                <h3>Revision</h3>
+                                <p>
+                                    Unlimited revisions until it's exactly
+                                    right. I refine every detail until you're
+                                    completely satisfied.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">🔄</div>
+                        </div>
+
+                        <div class="process-step reveal delay-5">
+                            <div class="step-num" aria-hidden="true">06</div>
+                            <div class="step-content">
+                                <h3>Delivery</h3>
+                                <p>
+                                    Final files delivered in your preferred
+                                    format, export settings, and platforms — on
+                                    time, every time.
+                                </p>
+                            </div>
+                            <div class="step-icon" aria-hidden="true">🚀</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ─── CONTACT ────────────────────────────────────────────── -->
+            <section id="contact" class="section contact">
+                <div class="container">
+                    <div class="section-header">
+                        <p class="section-eyebrow reveal">
+                            — Let's Create Together
+                        </p>
+                        <h2 class="section-title reveal delay-1">
+                            Start a <em>Project</em>
+                        </h2>
+                        <p class="section-sub reveal delay-2">
+                            Ready to transform your content? Let's talk.
+                        </p>
+                    </div>
+
+                    <div class="">
+                        <div class="contact-info reveal">
+                            <div class="contact-card">
+                                <div class="contact-icon">💬</div>
+                                <h3>WhatsApp</h3>
+                                <p>
+                                    Fastest response. Usually replies within 1
+                                    hour.
+                                </p>
+                                <a
+                                    href="https://wa.me/916351505599"
+                                    class="btn btn-whatsapp"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 24 24"
+                                        fill="currentColor"
+                                        aria-hidden="true"
+                                    >
+                                        <path
+                                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"
+                                        />
+                                    </svg>
+                                    Chat on WhatsApp
+                                </a>
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">📧</div>
+                                <h3>Email</h3>
+                                <p>
+                                    For detailed project briefs and formal
+                                    inquiries.
+                                </p>
+                                <a
+                                    href="mailto:rehannilgar786@gmail.com"
+                                    class="btn btn-ghost"
+                                    >rehannilgar786@email.com</a
+                                >
+                            </div>
+                            <div class="contact-card">
+                                <div class="contact-icon">🌐</div>
+                                <h3>Social Media</h3>
+                                <p>Follow my work and creative journey.</p>
+                                <div class="social-links">
+                                    <a
+                                        href="#"
+                                        class="social-link"
+                                        aria-label="YouTube"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="https://www.instagram.com/rxhan.creative/"
+                                        class="social-link"
+                                        aria-label="Instagram"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 24 24"
+                                            fill="currentColor"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                                            />
+                                        </svg>
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="social-link"
+                                        aria-label="Behance"
+                                        >Be</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="social-link"
+                                        aria-label="LinkedIn"
+                                        >in</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ─── FOOTER ─────────────────────────────────────────────── -->
+        <footer class="footer">
+            <div class="container footer-inner">
+                <div class="footer-brand">
+                    <a
+                        href="#home"
+                        class="nav-logo footer-logo"
+                        aria-label="Ruhan home"
+                    >
+                        <span class="logo-letter">R</span
+                        ><span class="logo-text">UHAN</span>
+                    </a>
+                    <p>
+                        Transforming ordinary content into extraordinary visual
+                        stories, one frame at a time.
+                    </p>
+                    <div class="social-links footer-socials">
+                        <a href="#" class="social-link" aria-label="YouTube"
+                            >YT</a
+                        >
+                        <a
+                            href="https://www.instagram.com/rxhan.creative/"
+                            class="social-link"
+                            aria-label="Instagram"
+                            >IG</a
+                        >
+                        <a href="#" class="social-link" aria-label="Behance"
+                            >Be</a
+                        >
+                        <a href="#" class="social-link" aria-label="LinkedIn"
+                            >in</a
+                        >
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Navigation</h4>
+                    <ul role="list">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Services</h4>
+                    <ul role="list">
+                        <li><a href="#services">Video Editing</a></li>
+                        <li><a href="#services">Photo Editing</a></li>
+                        <li><a href="#services">Motion Graphics</a></li>
+                        <li><a href="#services">Content Creation</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-col">
+                    <h4>Contact</h4>
+                    <ul role="list">
+                        <li>
+                            <a
+                                href="https://wa.me/919999999999"
+                                target="_blank"
+                                rel="noopener"
+                                >WhatsApp</a
+                            >
+                        </li>
+                        <li><a href="mailto:ruhan@email.com">Email</a></li>
+                        <li><a href="#contact">Hire Me</a></li>
+                        <li><a href="#contact">Free Quote</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© <span id="year"></span> Ruhan. All rights reserved.</p>
+                <p>Crafted with passion &amp; precision ✦</p>
+            </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <button
+            id="back-to-top"
+            aria-label="Back to top"
+            title="Back to top"
+            hidden
+        >
+            ↑
+        </button>
+
+        <script src="js/main.js"></script>
+        <script src="js/portfolio.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/theme.js"></script>
+    </body>
+</html>
