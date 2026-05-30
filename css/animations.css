@@ -1,0 +1,134 @@
+/* =========================================================
+   RUHAN PORTFOLIO — ANIMATIONS.CSS
+   ========================================================= */
+
+/* ─── KEYFRAMES ──────────────────────────────────────────── */
+@keyframes load-fill {
+  0%   { width: 0%; }
+  60%  { width: 75%; }
+  100% { width: 100%; }
+}
+
+@keyframes pulse-logo {
+  0%, 100% { opacity: 1; text-shadow: 0 0 20px rgba(79,70,229,0.5); }
+  50%       { opacity: 0.6; text-shadow: 0 0 40px rgba(79,70,229,0.8); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(34,197,94,0.08); }
+}
+
+@keyframes orb-float-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(40px, 60px) scale(1.05); }
+  66%       { transform: translate(-20px, 30px) scale(0.98); }
+}
+@keyframes orb-float-2 {
+  0%, 100% { transform: translate(0, 0); }
+  50%       { transform: translate(-60px, -40px) scale(1.1); }
+}
+@keyframes orb-float-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50%       { transform: translate(30px, -50px) scale(1.15); }
+}
+
+@keyframes name-r-glow {
+  0%, 100% { text-shadow: 0 0 0 rgba(79,70,229,0); }
+  50%       { text-shadow: 0 0 60px rgba(79,70,229,0.6); }
+}
+
+@keyframes scroll-hint {
+  0%, 100% { opacity: 0.5; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.2); }
+}
+
+@keyframes ring-pulse {
+  0%, 100% { transform: scale(1);   opacity: 0.15; }
+  50%       { transform: scale(1.05); opacity: 0.08; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ─── SCROLL REVEAL ──────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+
+/* Hero items are animated differently (faster, on load) */
+.hero .reveal {
+  transition-duration: 0.9s;
+}
+
+/* ─── PORTFOLIO ITEM ANIMATIONS ──────────────────────────── */
+.portfolio-item {
+  transition: transform 0.4s var(--ease-out), opacity 0.4s var(--ease-out);
+}
+.portfolio-item.filtering-out {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.portfolio-item.filtering-in {
+  animation: pop-in 0.5s var(--ease-out) forwards;
+}
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.9) translateY(10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* ─── COUNTER ANIMATION ──────────────────────────────────── */
+.stat-num {
+  animation: none;
+}
+
+/* ─── GLITCH HOVER (hero name) ───────────────────────────── */
+.hero-name:hover .name-r {
+  animation: glitch 0.4s steps(2) forwards;
+}
+@keyframes glitch {
+  0%   { transform: none; }
+  20%  { transform: skewX(-5deg) translateX(4px); color: var(--gold); }
+  40%  { transform: skewX(5deg)  translateX(-4px); color: var(--accent); }
+  60%  { transform: none; color: var(--accent); }
+  80%  { transform: skewX(-2deg); }
+  100% { transform: none; color: var(--accent); }
+}
+
+/* ─── SKILL BAR ANIMATION ────────────────────────────────── */
+.skill-card.in-view .skill-fill {
+  width: calc(var(--skill-pct) * 1%) !important;
+}
+
+/* ─── CARD HOVER SHIMMER ─────────────────────────────────── */
+.service-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.03),
+    transparent
+  );
+  transition: left 0.6s;
+  pointer-events: none;
+}
+.service-card:hover::after { left: 150%; }
